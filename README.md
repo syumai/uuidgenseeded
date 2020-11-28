@@ -21,7 +21,7 @@ $ echo -n "example" | uuidgenseeded
 
 # Output in lower case (shorthand: -l)
 $ uuidgenseeded -lower example
-475A87DF-68E7-4C04-A4F0-E11504AEC553
+475a87df-68e7-4c04-a4f0-e11504aec553
 ```
 
 ## LICENSE
