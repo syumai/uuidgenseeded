@@ -9,6 +9,7 @@ import (
 	"github.com/google/uuid"
 )
 
+// New generates UUID string using given seed reader.
 func New(seedReader io.Reader) (string, error) {
 	// calculate seed (int64)
 	h := fnv.New64()
@@ -25,7 +26,7 @@ func New(seedReader io.Reader) (string, error) {
 	// generate UUID
 	id, err := uuid.NewRandomFromReader(randReader)
 	if err != nil {
-		return "", fmt.Errorf("unexpected error when generating uuid: %w", err)
+		return "", fmt.Errorf("unexpected error occured when generating uuid: %w", err)
 	}
 	return id.String(), nil
 }
