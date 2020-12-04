@@ -10,10 +10,10 @@ func TestNew(t *testing.T) {
 	want := "475a87df-68e7-4c04-a4f0-e11504aec553"
 	got, err := New(seedReader)
 	if err != nil {
-		t.Errorf("realMain() error = %v, wantErr %v", err, false)
+		t.Errorf("New() error = %v, wantErr %v", err, false)
 		return
 	}
 	if got != want {
-		t.Errorf("realMain() got = %v, want %v", got, want)
+		t.Errorf("New() got = %v, want %v", got, want)
 	}
 }
